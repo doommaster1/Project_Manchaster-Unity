@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+}
+body button {
+    cursor: pointer;
+}
+body button:hover {
+    background-color: rgb(255, 212, 195);
+    color: black;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#kembali,
+#pesan,
+.slide p {
+    margin-left: 20%;
+}
+.slide h1 {
+    margin-left: 19.7%;
+}
+.slide {
+    margin-top: 77px;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 100px;
+    overflow: hidden;
+    color: white;
+}
+
+.slide button {
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(186, 0, 0);
+    padding: 10px;
+    margin: 20px;
+    opacity: 0.9;
+    border-style: none;
+}
+
+.slide h1 {
+    font-size: 70px;
+}
+
+.slide p {
+    font-size: 20px;
+}
+
+.slide #small {
+    font-size: 15px;
+}
+
+#video1 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.deskripsi h2 {
+    margin-left: 33%;
+    font-size: 20px;
+}
+.deskripsi ul {
+    margin-left: 35%;
+    word-wrap: break-word;
+    max-width: 650px;
+}
+
+.deskripsi li {
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+.deskripsi blockquote {
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    border: 1px;
+    border-style: solid;
+    color: crimson;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 42%;
+    margin-right: 37%;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.deskripsi h1 {
+    font-size: 50px;
+    text-align: left;
+    margin-left: 30%;
+    word-wrap: break-word;
+    max-width: 700px;
+    padding-top: 10px;
+}
+
+.deskripsi p {
+    margin-left: 32%;
+    word-wrap: break-word;
+    max-width: 700px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.promo h4 {
+    margin-left: 32.5%;
+    font-size: 20px;
+}
+.promo p {
+    font-size: 17px;
+}
+.contact {
+    color: white;
+    padding-top: 50px;
+    padding-left: 10%;
+    background-color: rgb(171, 0, 0);
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+.contact h3 {
+    font-size: 25px;
+}
+.contact p {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    word-wrap: break-word;
+    max-width: 200px;
+    font-size: 15px;
+    padding-bottom: 10px;
+
+}
+.contact img {
+    display: inline-block;
+    width: 30px;
+    margin-right: 10px;
+}
+/* breakpoint */
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    body button {
+        cursor: pointer;
+    }
+    body button:hover {
+        background-color: rgb(255, 212, 195);
+        color: black;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #kembali,
+    #pesan,
+    .slide p,
+    h1 {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    .slide {
+        padding-top: 50px;
+        position: relative;
+        padding-bottom: 100px;
+        overflow: hidden;
+        color: white;
+    }
+    .slide button {
+        font-size: 20px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(186, 0, 0);
+        padding: 10px;
+        opacity: 0.9;
+        border-style: none;
+    }
+    .slide h1 {
+        font-size: 30px;
+    }
+    .slide p {
+        font-size: 15px;
+    }
+    .slide #small {
+        font-size: 12px;
+    }
+
+    #video1 {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+    }
+
+    .deskripsi h2 {
+        margin-left: 17%;
+        font-size: 20px;
+    }
+    .deskripsi ul {
+        margin-left: 20%;
+        word-wrap: break-word;
+        max-width: 650px;
+    }
+
+    .deskripsi li {
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+    .deskripsi blockquote {
+        font-style: italic;
+        color: crimson;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 40%;
+        margin-right: 20%;
+        font-size: 20px;
+    }
+
+    .deskripsi h1 {
+        font-size: 25px;
+        text-align: left;
+        margin-left: 10%;
+        word-wrap: break-word;
+        max-width: 600px;
+    }
+
+    .deskripsi p {
+        margin-left: 15%;
+        word-wrap: break-word;
+        max-width: 700px;
+
+    }
+    .deskripsi {
+        margin-right: 10%;
+    }
+    .promo h4 {
+        margin-left: 45%;
+    }
+    .promo p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .contact {
+        color: white;
+        padding-top: 50px;
+        padding-left: 25%;
+        background-color: rgb(171, 0, 0);
+        opacity: 0.8;
+    }
+    .contact h3 {
+        font-size: 25px;
+    }
+    .contact p {
+        display: inline-block;
+        vertical-align: top;
+        word-wrap: break-word;
+        max-width: 200px;
+        font-size: 15px;
+    }
+    .contact img {
+        display: inline-block;
+        width: 30px;
+        margin-right: 45px;
+    }
+}

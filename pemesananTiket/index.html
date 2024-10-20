@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Montaga&family=Montserrat:wght@500&family=Oswald&family=Playfair+Display&family=Poppins:wght@100;300;400;700&family=Sofia+Sans+Condensed&display=swap"
+            rel="stylesheet">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Montaga&family=Montserrat:wght@500&family=Playfair+Display&family=Poppins:wght@100;300;400;700&family=Sofia+Sans+Condensed&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../img/logo.png">
+        <link rel="stylesheet" href="style2.css">
+
+        <title>Tiket</title>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" name="" id="toggler"/>
+            <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="../index.html" class="logo">Manchester<span>
+                    Unity</span></a>
+
+            <nav class="navbar">
+                <a href="../index.html">home</a>
+                <a href="https://www.manutd.com/" target="_blank">about</a>
+                <a href="../fasilitas/facility1.html">Why Us</a>
+            </nav>
+
+            <div class="icons">
+                <a href="../Merch/merch.html" class="fas fa-shopping-cart"></a>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <div class="leftTitle">
+            <p>Kunjungan
+                <br>
+                dengan guide</p>
+            <div class="sub">
+                <p>TOUR KLUB MANCHESTER UNITED</p>
+            </div>
+        </div>
+
+        <div class="totalhargaanak"></div>
+        <div class="totalhargadew"></div>
+        <div class="totalHarga"></div>
+
+        <div class="card">
+            <div class="reservasi-box">
+                <p>Reservasi</p>
+            </div>
+            <h2>KUNJUNGAN</h2>
+            <form>
+
+                <div class="card-header">
+                    <h3>Pilih Tanggal dan Jam</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal:</label>
+                        <input type="date" id="tanggal" name="tanggal" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="jam">Jam:</label>
+                        <input type="time" id="jam" name="jam" required="required">
+                    </div>
+                </div>
+
+                <label for="bahasa"><br>Bahasa:</label>
+                <input type="text" id="bahasa" name="bahasa" required="required">
+
+                <div class="button1">
+                    <p>Anak-Anak $25
+                    </p>
+                    <p style="font-size: 12px;">Usia antara 5-14 tahun</p>
+                    <div class="actButton">
+                        <button id="min">-</button>
+                        <div class="hasil"></div>
+                        <button id="plus">+</button>
+                    </div>
+
+                    <br>
+                    <div class="button2">
+                        <p>Dewasa $45</p>
+                        <div class="sub">
+                            <p style="font-size: 12px;">Usia diatas 14 tahun</p>
+                        </div>
+                        <div class="actButton2">
+                            <button id="mindew">-</button>
+                            <div class="hasildew"></div>
+                            <button id="plusdew">+</button>
+                        </div>
+                    </div>
+                    <h3>Kontak</h3>
+                    <label for="Nama">Nama Grup*:</label>
+                    <input type="text" id="Nama" name="Nama" required="required">
+
+                    <label for="Kontak">Kontak Personal:</label>
+                    <input type="text" id="Kontak" name="Kontak" required="required">
+
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Nama" name="Nama" required="required">
+                    <div>
+                        <p style="font-size: 16px;">*Data ini memberi kemungkinan kepada kami untuk
+                            mengirimkan semua informasi resmi terkait reservasi.
+                        </p>
+                    </div><br>
+
+                    <label for="country-code">Nomor Telepon:</label>
+                    <select id="country-code" name="country-code">
+                        <option value="+1">+1 (USA)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+62">+62 (IDN)</option>
+                        <!-- Tambahkan opsi negara lainnya sesuai kebutuhan -->
+                    </select>
+                    <input type="tel" id="phone-number" name="phone-number" required="required">
+                    <p style="font-size: 16px;">*Data ini memberi kemungkinan kepada kami untuk
+                        mengirimkan notifikasi terkait reservasi.</p>
+
+                    <div class="peringatan">
+                        <p><br>Pihak yang bertanggung jawab atas pengolahan data-data Anda adalah
+                            Manchester United Football Club dengan domisili di Sir Matt Busby Way Old
+                            Trafford M16 0RA Manchester, Inggris. Data-data tersebut akan digunakan dengan
+                            tujuan utama pengaturan atau manajemen hubungan dengan pihak penggemar
+                            Manchester United dan, selalu dengan persetujuan yang Anda berikan kepada kami,
+                            bagi pengiriman komunikasi-komunikasi komersial yang dipersonalisasi, baik
+                            melalui pos normal maupun elektronik, yang berhubungan dengan produk-produk dari
+                            pihak kolaborator dan sponsor. Anda bisa akses, rektifikasi dan hapus data-data
+                            Anda, atau tidak menerima cara pengaturannya melalui email, demikian
+                            mengapilikasikan semua hak tambahan Anda yang tertera dalam informasi detail
+                            tentang pengaturan data dengan mengirimkan email kepada: privacy@manutd.co.uk.
+                            Anda bisa akses informasi tambahan dalam materi perlindungan data.
+                            <br></p>
+                    </div>
+
+                    <label for="agree-checkbox">
+                        <input
+                            type="checkbox"
+                            id="agree-checkbox"
+                            name="agree-checkbox"
+                            required="required">
+                        <span style="font-size: smaller;">Saya telah membaca dan menerima Arahan Legal dan Pengaturan Privasi.</span>
+                    </label>
+
+                    <label for="agree-checkbox">
+                        <input
+                            type="checkbox"
+                            id="agree-checkbox"
+                            name="agree-checkbox"
+                            required="required">
+                        <span style="font-size: smaller;">Saya menyetujui Manchester United untuk
+                            mengirimkan komunikasi personalisasi, baik melalui jalur biasa maupun
+                            elektronik, sehubungan dengan produk-produk pihak ketiga, kolaborator dan/atau
+                            sponsor.</span>
+                    </label>
+
+                    <input type="submit" value="FINALISASI">
+                </form>
+            </div>
+        </div>
+        <script src='script.js'></script>
+        <script>
+            const cardContent = document.querySelector('.card-content');
+            cardContent.addEventListener('scroll', function () {
+                // Lakukan sesuatu saat kartu di-scroll
+                console.log('Kartu di-scroll');
+            });
+        </script>
+    </body>
+</html>
