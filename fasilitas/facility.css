@@ -1,0 +1,448 @@
+/* [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
+v2.0 | 20110126
+License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f7f9fa;
+    color: black;
+}
+
+.gallery {
+  display: grid;
+  margin: 87px auto 50px;
+  width: 90%;
+}
+
+.gallery .judul{
+    margin: 25px 0;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.content {
+    row-gap: 7px;
+    column-gap: 7px;
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(3, 118px);
+    grid-template-areas: 'gambar-1 gambar-2 gambar-3' 
+                            'gambar-1 gambar-4 gambar-5'
+                                'gambar-1 gambar-6 gambar-7';
+                        
+}
+
+.content .gambar a img{
+    object-fit: cover;
+}
+
+.small a img{
+    height: 118px;
+    width: 186px;
+}
+
+.content .gambar-satu {
+    object-fit: cover;
+    min-height: 370px;
+    width: 694px;
+    grid-area: gambar-1;
+}
+
+.content .gambar-dua {
+    object-fit: cover;
+    grid-area: gambar-2;
+}
+
+.content .gambar-tiga {
+    grid-area: gambar-3;
+}
+
+.content .gambar-empat {
+    grid-area: gambar-4;
+}
+
+.content .gambar-lima {
+    grid-area: gambar-5;
+}
+
+.content .gambar-enam{
+    grid-area: gambar-6;
+}
+
+.content .gambar-tujuh{
+    grid-area: gambar-7;
+}
+    
+.keuntungan{
+    font-size: 14px;
+    width: 95%;
+    padding: 20px;
+    margin: 25px auto;
+    display: grid;
+    align-content: center;
+    grid-template-columns: .8fr 2.2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'fasilitas tentang'
+                            'fasilitas lokasi';
+}
+
+.keuntungan .fasilitas{
+    grid-area: fasilitas;
+    /* border: 1px solid black;
+    margin-right: 20px;
+    height: ; */
+}
+
+.keuntungan .fasilitas ul img{
+    width: 22px;
+}
+
+.keuntungan .tentang{
+    grid-area: tentang;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.keuntungan .hotel{
+    /* width: 80%; */
+    width: 90%;
+    height: 150px;
+    overflow: auto;
+}
+
+.keuntungan .akomodasi{
+    /* height: 150px;
+    overflow: auto; */
+    text-align: end;
+}
+
+.keuntungan .lokasi{
+    grid-area: lokasi;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lokasi h5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.lokasi ul li i{
+    color: #c70101;
+}
+
+.keuntungan h5{
+    padding-bottom: 7px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.keuntungan li{
+    padding-bottom: 10px;
+}
+
+/* transportasi */
+.judul-transportasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 20px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.transportasi{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'transport1 explain1'
+                            'explain2 transport2'
+                                'transport3 explain3';
+}
+
+.transport1{
+    grid-area: transport1;
+    background-image: url(img/plane.jpg);
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.transport2{
+    grid-area: transport2;
+    background-image: url(img/train.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.transport3{
+    grid-area: transport3;
+    background-image: url(img/boat.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.explain{
+    display: grid;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pesawat{
+    grid-area: explain1;
+}
+
+.kereta{
+    grid-area: explain2;
+}
+
+.kapal{
+    grid-area: explain3;
+}
+
+/* destinasi */
+.penjelasan{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0;
+    width: 90%;
+    font-size: 16px;
+    width: 70%;
+}
+
+.penjelasan h1{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.destinasi{
+    margin: 15px auto;
+    font-size: 16px;
+    /* color: white; */
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'satu tiga dua'
+                            'empat enam lima';
+}
+
+.tempat .title-box{
+    content: "";
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0), #000);
+    z-index: 1;
+    transform: translateY(50px);
+    transition: 0.5s ease-in-out;
+}
+
+.tempat:hover .title,
+.tempat:hover .title-box{
+    transform: translateY(0);
+}
+
+.tempat .title{
+    position: absolute;
+    width: 100%;
+    color: white;
+    z-index: 2;
+    bottom: 10px;
+    padding: 10px;
+    transform: translateY(50px);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.tempat{
+    position: relative;
+    overflow: hidden;
+}
+
+.tempat:hover {
+    transition: 0.4s ease-in-out;
+}
+
+
+.satu{
+    grid-area: satu;
+    min-height: 250px;
+    background-image: url(img/manchaster_arena.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dua{
+    grid-area: dua;
+    background-size: cover;
+    background-image: url(img/etihad.jpg);
+    background-position: center;
+}
+
+.tiga{
+    grid-area: tiga;
+    background-size: cover;
+    background-image: url(img/albertSquare.jpg);
+    background-position: center;
+}
+
+.empat{
+    background-image: url(img/katedral.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: empat;
+}
+
+.lima{
+    background-image: url(img/1599px-Bridgewater_Hall_in_2008.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: lima;
+}
+
+.enam{
+    background-image: url(img/Manchester_Central_Library.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: enam;
+}
+
+
+
+
+
+
+

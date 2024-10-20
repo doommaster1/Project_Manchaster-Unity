@@ -1,0 +1,406 @@
+:root {
+  --red: #c70101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: #c70101;
+}
+
+
+/* header .scrolled,
+nav .scrolled{
+  background-color: white;
+} */
+
+
+
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 110vh;
+  background: url(img/ronaldo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.home .content {
+  max-width: 50rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  color: white;
+}
+
+.home .content span {
+  font-size: 3.5rem;
+  color: var(--red);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  color: white;
+  padding: 4rem 0;
+  line-height: 1.5;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.about .row .content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+  padding: 5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.tombols{
+  display: flex;
+  justify-content: center;
+}
+
+.about .row .content a{
+  margin: 0 auto;
+
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: white;
+  padding: 1.5rem 5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: var(--red);
+}
+
+.navbar a{
+  text-decoration: none;
+  font-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  padding: 2rem 9%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+}
+
+header.scrolled{
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+
+header .logo span {
+  color: var(--red);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+}
+
+header .navbar a:hover {
+  color: var(--red);
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+  color: var(--red);
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #333;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+/* fasilitas */
+.facility {
+  height: 350px;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 100px auto 0;
+  gap: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  /* background-color: #D8D9DA; */
+  background-color:  #bc3333;
+}
+
+
+.facility .fasilitas {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  place-content: center;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+}
+
+.facility .div {
+  text-align: center;
+  border: 0.2px solid #aaaaaa;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  line-height: 20px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+}
+
+.facility .div .logo {
+  border: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.facility .logo h1 {
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+}
+
+.facility p {
+  font-size: smaller;
+  margin: 10px;
+}
+
+.tombol{
+  display: grid;
+  place-content: center;
+   margin: 0 auto 30px;
+   background-color: #bc3333;
+   padding: 20px;
+   /* color: yellow; */
+}
+
+.tombol .btn:hover{
+  background-color: white;
+  color: black;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 15px;
+}
+
+.footer .box-container .box a {
+  display: block;
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.footer .box li{
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.box ul{
+  list-style: none;
+}
+
+.footer .box-container .box a i {
+  font-size: 20px;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #333;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.footer .credit span {
+  color: var(--pink);
+}
+
+
+
+/* media queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .home {
+    background-position: left;
+  }
+}
+
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  .facility{
+    grid-template-columns: 1fr;
+    height: 800px;
+}
+
+
+/* .footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+} */
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100%);
+  }
+
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  .home .content h3 {
+    font-size: 5rem;
+  }
+
+  .home .content span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+
